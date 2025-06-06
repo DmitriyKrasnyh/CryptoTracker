@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-dark-800 dark:text-gray-100 transition-colors duration-200;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary-500 hover:bg-primary-600 text-white focus:ring-primary-400;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary-500 hover:bg-secondary-600 text-dark-800 focus:ring-secondary-400;
+  }
+  
+  .btn-outline {
+    @apply btn border border-gray-300 hover:bg-gray-100 dark:border-dark-500 dark:hover:bg-dark-700;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-700 rounded-lg shadow-md overflow-hidden transition-all duration-200;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 bg-gray-100 dark:bg-dark-600 border border-gray-300 dark:border-dark-500 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 focus:border-transparent transition-all duration-200;
+  }
+
+  .section {
+    @apply py-8 md:py-12;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+.sparkline {
+  height: 30px;
+  width: 100px;
+}
+
+/* Glow effect for cards */
+.glow-hover {
+  @apply transition-all duration-300;
+}
+
+.glow-hover:hover {
+  @apply shadow-neon-primary;
+}
+
+.glow-hover-secondary:hover {
+  @apply shadow-neon-secondary;
+}
+
+/* Table styles */
+.crypto-table {
+  @apply w-full border-collapse;
+}
+
+.crypto-table th {
+  @apply py-3 px-4 text-left font-semibold text-gray-600 dark:text-gray-300 border-b border-gray-200 dark:border-dark-600;
+}
+
+.crypto-table td {
+  @apply py-4 px-4 border-b border-gray-200 dark:border-dark-600;
+}
+
+.crypto-table tr {
+  @apply transition-colors duration-200;
+}
+
+.crypto-table tr:hover {
+  @apply bg-gray-100 dark:bg-dark-700;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
