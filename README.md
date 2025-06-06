@@ -334,8 +334,8 @@ export default defineConfig({
 ---
 
 **Автор:**  
-Ваше Имя (или никнейм)  
-Email: your.email@example.com  
-GitHub: [github.com/ваш-логин](https://github.com/ваш-логин)  
+Дмитрий Красных  
+Email: dimathedevoloper@gmail.com  
+GitHub: [github.com/DmitriyKrasnyh](https://github.com/DmitriyKrasnyh)  
 
 Спасибо за использование CryptoTracker! 🚀  Если у вас возникнут вопросы или предложения — создавайте issue в репозитории или пишите прямо в Pull Request.
